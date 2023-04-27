@@ -46,9 +46,33 @@
 </body>
 
 <script>
-fetch('/../img/bg-daniel-rigo-de-morais-em-sorocaba.webp', '/../img/daniel-rigo-de-morais-sorocaba_up.webp', '/../css/estiloDaniel.css' {
+fetch('/../img/bg-daniel-rigo-de-morais-em-sorocaba.webp', {
   headers: {
-    'Cache-Control': 'max-age=31536000' // cache por uma hora
+    'Cache-Control': 'max-age=31536000' // cache por um ano
+  }
+})
+.then(response => {
+  // manipule a resposta aqui
+})
+.catch(error => {
+  // trate o erro aqui
+});
+
+fetch('/../img/daniel-rigo-de-morais-sorocaba_up.webp', {
+  headers: {
+    'Cache-Control': 'max-age=31536000' // cache por um ano
+  }
+})
+.then(response => {
+  // manipule a resposta aqui
+})
+.catch(error => {
+  // trate o erro aqui
+});
+
+fetch('/../css/estiloDaniel.css', {
+  headers: {
+    'Cache-Control': 'max-age=31536000' // cache por um ano
   }
 })
 .then(response => {
